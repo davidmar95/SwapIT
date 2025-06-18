@@ -35,7 +35,7 @@ function Home() {
 
   const fetchItems = async () => {
     try {
-      const res = await axios.get("http://localhost:4000/items");
+      const res = await axios.get(`${process.env.REACT_APP_API_URL}/items`);
       setItems(res.data);
       setFilteredItems(res.data);
     } catch (err) {
@@ -53,7 +53,7 @@ function Home() {
     );
 
     try {
-      await axios.post("http://localhost:4000/items", formData);
+      await axios.post(`${process.env.REACT_APP_API_URL}/items`, formData);
       alert("Item erfolgreich gepostet!");
       setForm({
         title: "",
@@ -75,7 +75,7 @@ function Home() {
 
   const handleDelete = async (id) => {
     try {
-      await axios.delete(`http://localhost:4000/items/${id}`);
+      await axios.delete(`${process.env.REACT_APP_API_URL}/items/${id}`);
       const updated = items.filter((item) => item.id !== id);
       setItems(updated);
       applyFilters(search, categoryFilter, updated);
@@ -202,7 +202,7 @@ function Home() {
                   <div key={item.id} className="bg-white rounded-2xl border border-gray-200 shadow hover:shadow-lg transition overflow-hidden flex flex-col">
                     {item.image && (
                       <img
-                        src={`http://localhost:4000${item.image}`}
+                        src={`${process.env.REACT_APP_API_URL}${item.image}`}
                         alt={item.title}
                         className="w-full h-44 object-cover"
                       />
