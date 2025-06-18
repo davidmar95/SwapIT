@@ -7,6 +7,8 @@ import path from 'path';
 import { fileURLToPath } from 'url';
 
 const app = express();
+
+// default server port
 const PORT = 4000;
 
 // Middleware
