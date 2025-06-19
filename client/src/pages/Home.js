@@ -238,7 +238,7 @@ function Home() {
       </main>
 
       <footer className="text-center text-sm text-gray-500 py-6 mt-10">
-        © 2025 SwapIT – Nachhaltig tauschen statt kaufen.
+        © 2025 SwapIT – Nachhaltig tauschen statt kaufen. Hallo Test!
       </footer>
     </div>
   );
