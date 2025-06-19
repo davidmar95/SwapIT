@@ -15,6 +15,7 @@ function Home() {
     "Kopfhörer",
     "Konsole",
     "Zubehör",
+    "USB- Stick"
   ];
   const [form, setForm] = useState({
     title: "",
@@ -212,7 +213,7 @@ function Home() {
                         <h3 className="text-lg font-bold text-indigo-700">{item.title}</h3>
                         <p className="text-sm text-gray-700 mt-1 line-clamp-3">{item.description}</p>
                         <p className="text-xs text-gray-500 mt-2">Kategorie: {item.type}</p>
-                        <p className="text-xs text-gray-500">📍 Ort: Hallo {item.location}</p>
+                        <p className="text-xs text-gray-500">📍 Ort: {item.location}</p>
                         <p className="text-xs text-gray-500">🔧 Zustand: {item.condition}</p>
                         <p className="text-xs text-gray-500">💶 Preis: {item.price}</p>
                         <p className="text-xs text-gray-500">🏷️ Art: {item.mode}</p>
