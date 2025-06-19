@@ -110,7 +110,7 @@ function Home() {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-sky-100 to-indigo-100 font-sans">
+    <div className="min-h-screen bg-gradient-to-br from-sky-100 to-black-100 font-sans">
       <header className="bg-white shadow-md sticky top-0 z-10 px-6 py-4 border-b flex flex-col gap-4 items-center">
         <div className="flex justify-between items-center w-full">
           <img src="/Logo-SwapIT.png" alt="Logo" className="h-10 md:h-12 mr-3" />
