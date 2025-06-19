@@ -225,7 +225,7 @@ function Home() {
                           💬 Chat starten
                         </button>
                       </div>
-                      <button onClick={() => handleDelete(item.id)} className="mt-4 text-sm text-red-600 hover:underline self-start">
+                      <button onClick={() => handleDelete(item.id)} className="mt-4 text-sm text-blue-600 hover:underline self-start">
                         🗑️ Löschen
                       </button>
                     </div>
@@ -238,7 +238,7 @@ function Home() {
       </main>
 
       <footer className="text-center text-sm text-gray-500 py-6 mt-10">
-        © 2025 SwapIT – Nachhaltig tauschen statt kaufen. Hallo Test!
+        © 2025 SwapIT – Nachhaltig tauschen statt kaufen.
       </footer>
     </div>
   );
