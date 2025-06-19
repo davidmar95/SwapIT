@@ -14,8 +14,7 @@ function Home() {
     "Software",
     "Kopfhörer",
     "Konsole",
-    "Zubehör",
-    "USB- Stick"
+    "Zubehör"
   ];
   const [form, setForm] = useState({
     title: "",
@@ -194,7 +193,7 @@ function Home() {
               📦 Aktuelle Angebote
             </h2>
             {filteredItems.length === 0 ? (
-              <p className="text-pink-600 font-semibold text-center text-lg mt-10">
+              <p className="text-pink-600 font-underline text-left text-lg mt-10">
                 ❌ Kein Item mit diesem Titel oder dieser Kategorie gefunden.
               </p>
             ) : (
