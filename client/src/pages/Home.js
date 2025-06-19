@@ -193,7 +193,7 @@ function Home() {
               📦 Aktuelle Angebote
             </h2>
             {filteredItems.length === 0 ? (
-              <p className="text-pink-600 font-underline text-left text-lg mt-10">
+              <p className="text-pink-600 font-bold text-center text-lg mt-10">
                 ❌ Kein Item mit diesem Titel oder dieser Kategorie gefunden.
               </p>
             ) : (
@@ -220,9 +220,9 @@ function Home() {
                         <p className="text-xs text-gray-500">👤 Kontakt: {item.name} – {item.contact}</p>
                         <button
                           disabled
-                          className="mt-2 inline-block bg-indigo-500 text-white px-4 py-2 rounded-lg text-sm hover:bg-indigo-600 cursor-not-allowed"
+                          className="mt-2 inline-block bg-red-500 text-black px-4 py-2 rounded-lg text-sm hover:bg-indigo-600 cursor-not-allowed"
                         >
-                          💬 Chat starten
+                          💬 Chat starten LOL
                         </button>
                       </div>
                       <button onClick={() => handleDelete(item.id)} className="mt-4 text-sm text-red-600 hover:underline self-start">
